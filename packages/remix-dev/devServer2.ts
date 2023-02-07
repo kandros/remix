@@ -140,7 +140,6 @@ export let serve = async (
 
       if (assetsManifest.hmr && prevResult) {
         let updates = HMR.updates(config, result, prevResult);
-        console.log({ updates });
         socket.hmr(assetsManifest, updates);
       } else {
         socket.reload();
