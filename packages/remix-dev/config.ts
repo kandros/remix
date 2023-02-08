@@ -32,12 +32,12 @@ export type ServerBuildTarget =
 export type ServerModuleFormat = "esm" | "cjs";
 export type ServerPlatform = "node" | "neutral";
 
-type Dev = {
+interface Dev {
   port?: number;
   appServerPort?: number;
   remixRequestHandlerPath?: string;
   rebuildPollIntervalMs?: number;
-};
+}
 
 interface FutureConfig {
   unstable_cssModules: boolean;
