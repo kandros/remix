@@ -18,7 +18,7 @@ interface Dev {
   rebuildPollIntervalMs?: number;
 }
 
-interface FutureConfig {
+export interface FutureConfig {
   unstable_cssModules: boolean;
   unstable_cssSideEffectImports: boolean;
   unstable_dev: boolean | Dev;
